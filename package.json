@@ -2,7 +2,6 @@
   "name": "tixy-land",
   "version": "1.2.5",
   "description": "(t,i,x,y) => 'creative code golfing",
-  "main": "index.js",
   "bin": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html --open",
@@ -14,16 +13,21 @@
     "firebase": "firebase deploy --only hosting",
     "deploy": "npm run clean && npm run build && npm run firebase"
   },
-  "keywords": ["code golf", "creative coding"],
+  "keywords": [
+    "code golf",
+    "creative coding"
+  ],
   "author": "@aemkei",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-stylus": "^2.8.3",
     "cssnano": "^4.1.10",
     "parcel-plugin-inline-source": "^1.0.0",
     "stylus": "^0.54.8"
   },
   "dependencies": {
     "gif.js.optimized": "^1.0.1",
+    "parcel": "^2.8.3",
     "pureimage": "^0.2.5"
   }
 }
